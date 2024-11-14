@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from aplicativo.models import Cars
+
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    cars = Cars.objects.all()
+    return render(request, 'index.html',{'cars': cars})
