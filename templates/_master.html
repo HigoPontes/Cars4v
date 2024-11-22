@@ -15,6 +15,14 @@
         <header class="container bg-white rounded">
             <h1 class="text-center">Voitures</h1>
         </header>
+        <nav class="container bg-white rounde">
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url "admin:login" %}">Administrador</a>
+            </li>
+        </nav>
         <main class="container p5">
             {% block content  %}
             
